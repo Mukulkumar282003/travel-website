@@ -117,7 +117,7 @@ textarea {
     width: 100%;
     background-image:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("images/hero.jpg");
+        url("hero.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
