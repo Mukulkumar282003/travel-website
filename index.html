@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore beautiful destinations and plan your next travel adventure."
+    />
+    <title>Explore the World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#home" class="logo">EXPLORE.</a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <div class="nav-links" id="primary-navigation">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+
+      <div class="nav-button">
+        <a href="#destinations">Explore Now</a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-subtitle">DISCOVER THE WORLD</p>
+
+        <h1>
+          Explore the beauty
+          <br />
+          of the world
+        </h1>
+
+        <p class="hero-description">
+          Discover beautiful destinations, experience new cultures and create
+          unforgettable memories.
+        </p>
+
+        <a href="#destinations" class="hero-button"> Start Exploring </a>
+      </div>
+    </section>
+
+    <!-- QUICK TRIP PLANNER -->
+    <section class="booking-section">
+      <div class="planner-heading">
+        <h2>Plan Your Trip</h2>
+        <p>Choose your destination and travel preferences</p>
+      </div>
+
+      <form class="booking-box" action="#enquiry" method="get">
+        <div class="booking-item">
+          <label for="planner-destination">Destination</label>
+          <select id="planner-destination" name="destination" required>
+            <option value="">Where to go?</option>
+            <option value="Bali">Bali</option>
+            <option value="Paris">Paris</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Santorini">Santorini</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+
+        <div class="booking-item">
+          <label for="planner-date">Travel Date</label>
+          <input type="date" id="planner-date" name="travel-date" required />
+        </div>
+
+        <div class="booking-item">
+          <label for="planner-travelers">Travelers</label>
+          <select id="planner-travelers" name="travelers" required>
+            <option value="1">1 Traveler</option>
+            <option value="2" selected>2 Travelers</option>
+            <option value="3">3 Travelers</option>
+            <option value="4">4 Travelers</option>
+            <option value="5">5 Travelers</option>
+            <option value="6">6 Travelers</option>
+          </select>
+        </div>
+
+        <button type="submit" class="search-button">Plan My Trip</button>
+      </form>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="destinations" id="destinations">
+      <div class="section-heading">
+        <p>EXPLORE PLACES</p>
+        <h2>Popular Destinations.</h2>
+      </div>
+
+      <div class="destination-tools">
+        <label class="sr-only" for="destination-search">Search destinations</label>
+        <input type="search" id="destination-search" placeholder="Search destinations..." autocomplete="off" />
+        <p id="destination-count" aria-live="polite">Showing all 6 destinations</p>
+      </div>
+
+      <div class="destination-container">
+        <a href="bali.html" class="destination-card">
+          <img src="images/bali.jpg" alt="Bali" />
+          <div class="card-content">
+            <h3>Bali</h3>
+            <p>Indonesia</p>
+          </div>
+        </a>
+
+        <a href="switzerland.html" class="destination-card">
+          <img src="images/switzerland.jpg" alt="Switzerland" />
+          <div class="card-content">
+            <h3>Switzerland</h3>
+            <p>Switzerland</p>
+          </div>
+        </a>
+
+        <a href="santorini.html" class="destination-card">
+          <img src="images/santorini.jpg" alt="Santorini" />
+          <div class="card-content">
+            <h3>Santorini</h3>
+            <p>Greece</p>
+          </div>
+        </a>
+
+        <a href="paris.html" class="destination-card">
+          <img src="images/paris.jpg" alt="Paris" />
+          <div class="card-content">
+            <h3>Paris</h3>
+            <p>France</p>
+          </div>
+        </a>
+
+        <a href="india.html" class="destination-card">
+          <img src="images/india.jpg" alt="India" />
+          <div class="card-content">
+            <h3>India</h3>
+            <p>Ladakh</p>
+          </div>
+        </a>
+
+        <a href="usa.html" class="destination-card">
+          <img src="images/usa.jpg" alt="USA" />
+          <div class="card-content">
+            <h3>USA</h3>
+            <p>New York</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="images/about.jpg" alt="Beautiful travel destination" />
+      </div>
+
+      <div class="about-content">
+        <p class="about-subtitle">ABOUT OUR JOURNEY</p>
+
+        <h2>
+          Travel Beyond
+          <br />
+          Your Imagination
+        </h2>
+
+        <p class="about-description">
+          We believe travel is more than visiting places. It is about
+          discovering new cultures, meeting people and creating unforgettable
+          memories. Let us help you find your next adventure.
+        </p>
+
+        <div class="about-stats">
+          <div>
+            <h3>150+</h3>
+            <p>Destinations</p>
+          </div>
+
+          <div>
+            <h3>10k+</h3>
+            <p>Happy Travelers</p>
+          </div>
+        </div>
+
+        <a href="#why-us" class="about-button">Learn More</a>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-us" id="why-us">
+      <div class="section-heading">
+        <p>WHY TRAVEL WITH US</p>
+        <h2>Why Choose Us?</h2>
+      </div>
+
+      <div class="feature-container">
+        <div class="feature-card">
+          <div class="feature-icon">✈️</div>
+          <h3>Best Travel Experience</h3>
+          <p>
+            Discover amazing places and enjoy unforgettable travel experiences.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Expert Travel Guides</h3>
+          <p>
+            Our experienced guides make every journey comfortable and memorable.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Affordable Packages</h3>
+          <p>Explore the world with exciting trips that fit your budget.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL ENQUIRY FORM -->
+    <section class="enquiry-section" id="enquiry">
+      <h2>Plan Your Dream Trip</h2>
+      <p>Fill out the form and tell us about your travel plans.</p>
+
+      <form class="enquiry-form" novalidate>
+        <label for="visitor-name">Your Name</label>
+        <input
+          type="text"
+          id="visitor-name"
+          name="name"
+          placeholder="Enter your name"
+          autocomplete="name"
+          required
+        />
+
+        <label for="visitor-email">Email Address</label>
+        <input
+          type="email"
+          id="visitor-email"
+          name="email"
+          placeholder="Enter your email"
+          autocomplete="email"
+          required
+        />
+
+        <label for="enquiry-destination">Select Destination</label>
+        <select id="enquiry-destination" name="destination" required>
+          <option value="">Choose Destination</option>
+          <option value="Bali">Bali</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Santorini">Santorini</option>
+          <option value="Paris">Paris</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </select>
+
+        <label for="enquiry-date">Travel Date</label>
+        <input type="date" id="enquiry-date" name="travel-date" required />
+
+        <label for="enquiry-travelers">Number of Travelers</label>
+        <input
+          type="number"
+          id="enquiry-travelers"
+          name="travelers"
+          min="1"
+          max="20"
+          placeholder="Number of travelers"
+          required
+        />
+
+        <label for="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us about your travel plans"
+        ></textarea>
+
+        <button type="submit" class="enquiry-submit">Send Enquiry by Email</button>
+        <p class="form-note">Your email app will open with your enquiry ready to send. This demo does not store submissions.</p>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p class="faq-subtitle">Find answers to common travel questions.</p>
+
+      <details class="faq-item">
+        <summary>How can I book a travel package?</summary>
+        <p>
+          Explore our destination pages and use the enquiry form to share your
+          travel plans.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I choose my travel destination?</summary>
+        <p>
+          Yes! You can choose from Bali, Switzerland, Santorini, Paris, India
+          and USA.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are the package prices fixed?</summary>
+        <p>
+          Prices displayed on this website are sample prices. Actual prices may
+          vary depending on travel dates and services.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I travel with my family?</summary>
+        <p>
+          Yes! You can mention the number of travelers and your requirements in
+          the enquiry form.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I contact your team?</summary>
+        <p>
+          Visit the Contact section to find the available contact information.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I customize my travel package?</summary>
+        <p>
+          You can mention your preferences in the enquiry form. Customization is
+          subject to availability.
+        </p>
+      </details>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="reviews-section" id="reviews">
+      <h2>What Our Travellers Say</h2>
+
+      <p class="reviews-subtitle">
+        Sample reviews for our travel website design.
+      </p>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            "The beautiful destinations and travel information made planning my
+            dream trip simple and enjoyable."
+          </p>
+          <h3 class="reviewer-name">Rahul Sharma</h3>
+          <p class="reviewer-place">Sample Traveller</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            "I loved exploring the destination pages. The galleries and travel
+            packages make the website easy to understand."
+          </p>
+          <h3 class="reviewer-name">Priya Verma</h3>
+          <p class="reviewer-place">Sample Traveller</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            "The website has a clean design and provides useful information
+            about different travel destinations."
+          </p>
+          <h3 class="reviewer-name">Aman Singh</h3>
+          <p class="reviewer-place">Sample Traveller</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Explore World</h3>
+          <p>
+            Discover beautiful destinations, explore new cultures and create
+            unforgettable travel memories with us.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#about">About Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <a href="mailto:hello@explore.com">hello@explore.com</a>
+          <a href="tel:+91123456789">+91 123456789</a>
+          <a href="#enquiry">Travel Enquiry</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Explore World. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+    <script src="script.js"></script>
+  </body>
+</html>
